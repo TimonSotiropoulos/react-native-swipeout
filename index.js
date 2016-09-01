@@ -134,7 +134,6 @@ const Swipeout = React.createClass({
   },
 
   componentWillMount: function() {
-      console.log("Mouting Swiper");
     this._panResponder = PanResponder.create({
       onStartShouldSetPanResponder: (event, gestureState) => {
           return true;
