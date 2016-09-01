@@ -93,6 +93,7 @@ const NativeButton = React.createClass({
 
       return (
         <TouchableNativeFeedback
+          rejectResponderTermination
           {...buttonProps}>
           <View style={[styles.button, this.props.style, disabledStyle]}>
             {this._renderText()}
@@ -104,6 +105,7 @@ const NativeButton = React.createClass({
     // Render default button
     return (
       <TouchableHighlight
+        rejectResponderTermination
         {...buttonProps}
         style={[styles.button, this.props.style, disabledStyle]}
         underlayColor={ this.props.underlayColor }>
