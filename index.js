@@ -139,9 +139,9 @@ const Swipeout = React.createClass({
         return false;
       },
       onMoveShouldSetPanResponder: (event, gestureState) => {
-        return Math.abs(gestureState.vx) > Math.abs(gestureState.vy) &&
-               Math.abs(gestureState.dx) > this.props.sensitivity &&
-               Math.abs(gestureState.dy) > this.props.sensitivity;
+        return Math.abs(gestureState.vx) > Math.abs(gestureState.vy);// &&
+            //    Math.abs(gestureState.dx) > this.props.sensitivity &&
+            //    Math.abs(gestureState.dy) > this.props.sensitivity;
       },
       onPanResponderGrant: this._handlePanResponderGrant,
       onPanResponderMove: this._handlePanResponderMove,
